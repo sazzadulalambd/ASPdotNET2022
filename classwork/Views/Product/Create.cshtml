@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}7\
+ 
+
+<h2>Product</h2>
+
+<form actions="" method="post">
+    ID: <input type="text" value="@(Model!=null? Model.Id:"")" name="Id" class="form-control" />
+    @Html.ValidationMessage("Id")<br />
+    Name: <input type="text" value="@(Model!=null? Model.Name:"")" name="Name" class="form-control" />
+    @Html.ValidationMessage("Name") <br />
+    Price: <input type="text" value="@(Model!=null? Model.Price:"")" name="Price" class="form-control" />
+    @Html.ValidationMessage("Price")<br />
+
+    <input type="submit" name=" " class="btn btn-success" />
+
+</form>
