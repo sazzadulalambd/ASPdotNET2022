@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<table class="table table-condensed">
+    <thead>
+        <tr>
+            <th>
+                Product ID
+            </th>
+            <th>
+                Prodect Name
+            </th>
+            <th>
+                Price
+            </th>
+        </tr>
+
+    </thead>
+    <tbody>
+        @foreach (var products in Model)
+        {
+            <tr>
+                <td>
+                    @products.Id
+                </td>
+                <td>
+                    @products.Name
+                </td>
+
+                <td>
+                    @products.Price
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
