@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Sign up</h2>
+
+
+<form actions="" method="post">
+    ID: <input type="text" value="@(Model!=null? Model.Id:"")" name="Id" class="form-control" />
+    @Html.ValidationMessage("Id")<br />
+
+    Name: <input type="text" value="@(Model!=null? Model.Name:"")" name="Name" class="form-control" />
+    @Html.ValidationMessage("Name") <br />
+
+    Dob: <input type="date" value="@(Model!=null? Model.Dob:"")" name="Dob" class="form-control" />
+    @Html.ValidationMessage("Dob")<br />
+
+    Email: <input type="text" value="@(Model!=null? Model.Email:"")" name="Email" class="form-control" />
+    @Html.ValidationMessage("Email") <br />
+
+    Password: <input type="text" value="@(Model!=null? Model.password:"")" name="Password" class="form-control" />
+    @Html.ValidationMessage("password") <br />
+
+    Confirm Password: <input type="text" value="@(Model!=null? Model.Cpassword:"")" name="CPassword" class="form-control" />
+    @Html.ValidationMessage("Cpassword") <br />
+
+    <input type="submit" name=" " class="btn btn-success" />
+
+</form>
